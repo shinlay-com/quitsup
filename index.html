@@ -25,32 +25,52 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0 0; }
 <body>
 <main>
 <h1>QuitsUp Privacy Policy</h1>
-<p class="updated">Last updated 29 October 2026</p>
+<p class="updated">Last updated 2 November 2026</p>
 
 <h2>Your data stays on your device</h2>
-<p>QuitsUp keeps your Groups, people, expenses, receipts, settlements and loans on your iPhone. There is no QuitsUp account, and QuitsUp has no server that receives your data.</p>
+<p>QuitsUp keeps your Groups, people, expenses, receipts, settlements and loans on your device. There is no QuitsUp account, and QuitsUp has no server that receives your data.</p>
 
 <h2>Shared Groups</h2>
-<p>If you share a Group, its records are stored in your own iCloud account using Apple CloudKit, and the people you share it with can see and change that Group. The developer of QuitsUp cannot read them. Groups you do not share never leave your device. Apple's handling of iCloud data is covered by Apple's own privacy policy.</p>
+<p>If you share a Group, its records are stored in your own iCloud account using Apple CloudKit. The people you share it with can see that Group, and Editors can change it. Everything saved in the Group is visible to them: expenses, receipts, a place recorded on an expense, a payment line you chose to show, and a Budget the Owner sets. The developer of QuitsUp cannot read any of it. Groups you do not share never leave your device unless you turn on Sync my devices. Apple's handling of iCloud data is covered by Apple's own privacy policy.</p>
+<p>If you are the Owner of a shared Group, your other devices signed in to the same Apple Account find it in your iCloud and show the same shared Group. This happens whether or not Sync my devices is on, because the Group already lives in your iCloud. When you copy a shared Group, QuitsUp invites the same people with the same roles, and each person must accept.</p>
 
 <h2>Location</h2>
-<p>Location is off unless you turn it on in Settings. When it is on, QuitsUp uses your location only while you use the app, to suggest a currency and to tag an expense with where it happened. It is never used in the background, and you can turn it off at any time. The Spending Map and an expense's place name use Apple's location lookup, which sends the recorded coordinates to Apple and never to the developer.</p>
+<p>The first time you open QuitsUp on a device, it shows a short explanation of what notifications and location are used for, and then asks iOS for permission, once. If you allow location, QuitsUp also turns on location tagging. If you choose Not Now, nothing is asked at that moment, and iOS may be asked later, the first time you add an expense. You can turn tagging off at any time with Use my location in QuitsUp Settings, and you can change the permission in iOS Settings. If you had already turned it off, QuitsUp does not turn it back on.</p>
+<p>When location is on, QuitsUp reads your location only while you use the app, one reading at a time, and never in the background. It uses it to suggest the currency of the country you are in and to tag an expense, loan or repayment with where it happened. Tagging never changes a balance, and QuitsUp works without it.</p>
+<p>The coordinates and the time of the reading are saved in that record on your device, and are never sent to the developer. Because the record is part of your data, they travel with it when it is stored in iCloud: in a shared Group, the people in the Group can receive them and the Spending Map shows where members recorded expenses, and with Sync my devices on they reach your other devices through your own iCloud.</p>
+<p>To suggest a currency, to show a place name and to draw the Spending Map, QuitsUp uses Apple's location lookup service, which receives the recorded coordinates. This goes to Apple, never to the developer.</p>
+
+<h2>Notifications</h2>
+<p>Reminders and alerts, such as balance reminders, budget notices and updates when someone changes a shared Group, are created on your device. QuitsUp has no server that sends them. For shared Groups, Apple's iCloud tells QuitsUp that a Group changed, and QuitsUp then shows the notice on your device. You can turn them off in iOS Settings and in QuitsUp Settings.</p>
 
 <h2>Nearby Join</h2>
 <p>When you add a friend to a Group nearby, or join one, QuitsUp uses your device's local network to find the other phone and connect directly to it. You approve the Local Network permission the first time. The phones compare a short code and the connection is encrypted. Only the invitation you approve is exchanged: your name as typed on the joining screen, the host's name, the Group's name after approval, and the iCloud invitation link. Nothing else is sent, nothing is shared with the developer, and nothing is advertised unless the Nearby screen is open.</p>
 
 <h2>Your money (Personal Money)</h2>
-<p>Income, cash exchanges and exchange rates you record in Personal Money stay on your device. They are included in your backups, are never added to a Group or shared with anyone, and are not sent to the developer. If you turn on Sync my devices in Settings (it is off until you do), they are also kept in your own private iCloud account through Apple CloudKit so your own devices show the same figures. Only devices signed in to your Apple Account can read them, and the developer cannot. Turn the switch off and nothing more is sent.</p>
-<p>A budget you set for a Group stays on your phone. It is included in your backups, is never shared with Group members or sent to the developer, and its notifications are local to your phone.</p>
+<p>Income, cash exchanges and exchange rates you record in Personal Money stay on your device. They are included in your backups, are never added to a Group or shared with anyone, and are not sent to the developer. Money Flow, which shows these figures month by month, is worked out on your device from the same records. If you turn on Sync my devices in Settings (it is off until you do), they are also kept in your own private iCloud account through Apple CloudKit so your own devices show the same figures. Only devices signed in to your Apple Account can read them, and the developer cannot. Turn the switch off and nothing more is sent. If you turn on the Personal Money lock, iOS checks your Face ID or passcode; QuitsUp never receives your biometric data.</p>
+
+<h2>Payment details</h2>
+<p>Payment details you add in Settings stay on your phone and are added to reminders you send. If you turn on Show to Group members, that one line is also saved in your shared Groups' iCloud space so the people in those Groups can see how to pay you. Everyone in those Groups can read it. It is off until you turn it on, turning it off removes it, and it is never sent to the developer.</p>
+
+<h2>Budgets</h2>
+<p>A Budget you set for a Group you do not share stays on your device. It is included in your backups, is not sent to the developer, and its notifications are local to your device.</p>
+<p>If you are the Owner of a shared Group and set a Budget, its amount, currency and end date are saved with that Group in your iCloud so every member sees what is left. Only the Owner can change it, and clearing it clears it for everyone. How much has been spent is worked out on each member's own device, and each member's notifications are local. The developer cannot read it.</p>
+
+<h2>Purchases (QuitsUp Plus)</h2>
+<p>QuitsUp is free to use. QuitsUp Plus is optional and is sold as Yearly (with a free trial), Lifetime, Lifetime Family, and a Trip Pass for one Group. The App Store shows the prices and takes the payment.</p>
+<p>Payments are handled entirely by Apple, through your Apple Account. QuitsUp never sees or stores your card or payment details, and it has no account of its own. QuitsUp learns what you have bought from Apple on your device and keeps a note of it on the device so Plus keeps working offline. Settings has Restore Purchases, and Manage Subscription for a Yearly plan, which Apple manages. People in your Apple Family Sharing group can use Lifetime Family; Apple manages who is in the family, and QuitsUp does not see who they are. A Trip Pass is bought for one Group, and an anonymous code for that Group, not its name or contents, is attached to the Apple purchase so the pass can be matched to it again.</p>
 
 <h2>Camera, receipts and photos</h2>
-<p>The camera is used only when you choose to scan a receipt. Receipt images stay on your device, or in a shared Group if you add them to one.</p>
+<p>The camera is used only when you choose to scan a receipt or take a Group cover photo. The text on a receipt is read on your device, and receipt images are not uploaded to the developer or to any other service. Receipt images stay on your device, or in a shared Group if you add them to one, or in your own iCloud if you turn on Sync my devices. A cover photo has its location data removed on your device.</p>
 
 <h2>Reference exchange rates</h2>
 <p>When you open the Exchange Rate sheet, QuitsUp may request a reference rate from Frankfurter using the two currency codes and selected date. The request does not include names, amounts or Group identifiers. Frankfurter and network intermediaries may receive connection information such as your IP address. You can enter a rate without a connection.</p>
 
 <h2>No tracking</h2>
-<p>QuitsUp does not track you. It has no analytics and no advertising.</p>
+<p>QuitsUp does not track you. It has no analytics, no advertising and no third-party code that collects data.</p>
+
+<h2>Updates</h2>
+<p>To tell you about updates, QuitsUp asks the App Store for the latest version number. Nothing about you or your Groups is sent.</p>
 
 <h2>Deleting your data</h2>
 <p>Delete a Group in QuitsUp to remove it and its records. Deleting the app removes all QuitsUp data from your device. Leaving a shared Group removes your access to it.</p>
