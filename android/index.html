@@ -29,7 +29,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0 0; }
 <body>
 <main>
 <h1>QuitsUp for Android Privacy Policy</h1>
-<p class="updated">Last updated 18 November 2026</p>
+<p class="updated">Last updated 19 November 2026</p>
 
 <h2>Your data stays on your phone</h2>
 <p>QuitsUp keeps your Groups, people, expenses, receipts, settlements, loans, budgets and personal money on your phone. There is no QuitsUp account and no sign-in. Only a Group that you choose to share leaves your phone, encrypted, as described under Shared Groups. A Group you do not share never leaves your phone, and the developer cannot see it.</p>
@@ -50,6 +50,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0 0; }
 <li>when push wake-ups are on, a push identifier (see Notifications);</li>
 <li>a purchase request to Google Play, if you buy something (see Purchases);</li>
 <li>the exchange-rate request described next;</li>
+<li>the map request described under Spending Map, while the Spending Map is open and the phone is online;</li>
 <li>anonymous diagnostics sent by Google's own libraries (see Camera, receipts and photos).</li>
 </ul>
 <p>QuitsUp itself makes one request that is not about a shared Group, and only when you open the Exchange Rate sheet for an expense or loan in a currency other than the Group's settlement currency: it asks the public exchange-rate service Frankfurter (api.frankfurter.dev, European Central Bank reference rates) for a suggested rate. The request contains two currency codes and a date. It contains no amounts, names, Group or expense identifiers or account. Because it is an internet request, the exchange-rate service and the networks in between can see your phone's IP address and the time of the request. QuitsUp does not do this in the background or when the app starts. A suggestion changes nothing until you tap Apply and Save, and you can type a rate without a connection. A rate fetched earlier for the same currencies and date is kept on your phone (at most 200) and still shown offline.</p>
@@ -60,7 +61,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0 0; }
 <p>The coordinates and the time of the reading are saved in that record on your phone and are not sent to the developer by QuitsUp. If you share the Group, the place saved on an expense is part of the Group's records and is visible to its members, encrypted on the way as described under Shared Groups. Location is optional and stays off unless you turn it on. To read the location, QuitsUp uses Google Play services on your phone. To find the country, QuitsUp uses Android's built-in geocoder, which on most phones is provided by Google and may receive the coordinates; the result is a country code and nothing else is kept from that lookup. Google's own privacy policy applies to those services.</p>
 
 <h2>Spending Map</h2>
-<p>The Spending Map is drawn on your phone from country outlines and a city-name list that are part of the app (public-domain Natural Earth data). It shows only the places already saved with your expenses. No map service or map tiles are used and nothing is sent.</p>
+<p>The Spending Map shows only the places already saved with your expenses. When your phone is offline, it is drawn on your phone from map data that is part of the app (public-domain Natural Earth: coastlines, lakes, rivers, borders and place names), and nothing is sent.</p>
+<p>When your phone is online, the map picture is loaded from Google Maps through Google Play services. Google receives the area of the map you are looking at, your phone's network address (IP address) and technical details about your device and this app, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. It does not receive your expenses, amounts, names, notes, receipt photos or Groups: the pins and amounts are drawn on your phone. This request is made only while the Spending Map is open.</p>
 
 <h2>Notifications</h2>
 <p>Reminders and alerts, such as balance reminders, an evening summary, frozen-settlement reminders and budget notices, are created on your phone. QuitsUp also listens for the phone finishing a restart, only to plan its reminders again. You can turn them off in Android Settings and in QuitsUp Settings.</p>
@@ -93,7 +95,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0 0; }
 <p>Home-screen widgets show a Group's balance from a small file on your phone. While the phone is locked, widgets hide amounts and names.</p>
 
 <h2>No tracking, no ads</h2>
-<p>QuitsUp does not track you. It has no analytics of its own, no advertising, no sale of data and no advertising identifier. The only data leaving your phone is described under Shared Groups, What leaves your phone, Notifications, Purchases, Location and Camera, receipts and photos.</p>
+<p>QuitsUp does not track you. It has no analytics of its own, no advertising, no sale of data and no advertising identifier. The only data leaving your phone is described under Shared Groups, What leaves your phone, Notifications, Purchases, Location, Spending Map and Camera, receipts and photos.</p>
 
 <h2>Updates</h2>
 <p>QuitsUp does not check for updates itself. Google Play delivers updates, and nothing about you or your Groups is sent by QuitsUp for that.</p>
